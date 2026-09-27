@@ -1,0 +1,2 @@
+ALTER TABLE "Module" ADD COLUMN "archivedAt" TIMESTAMP(3);
+ALTER TABLE "Lesson" ADD COLUMN "archivedAt" TIMESTAMP(3);

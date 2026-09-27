@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: codezetta
+      POSTGRES_PASSWORD: codezetta
+      POSTGRES_DB: codezetta
+    volumes:
+      - codezetta_pg:/var/lib/postgresql/data
+
+volumes:
+  codezetta_pg:

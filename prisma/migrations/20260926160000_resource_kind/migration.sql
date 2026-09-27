@@ -1,0 +1,2 @@
+CREATE TYPE "ResourceKind" AS ENUM ('PDF', 'SLIDES', 'SOURCE', 'EXERCISE', 'LINK', 'OTHER');
+ALTER TABLE "LessonResource" ADD COLUMN "kind" "ResourceKind" NOT NULL DEFAULT 'LINK';
